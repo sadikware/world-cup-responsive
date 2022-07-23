@@ -192,12 +192,12 @@ a {
 
 @media screen and (max-width: 778px) {
   html {
-    font-size: 55%;
+    font-size: 45%;
   }
 
   .header,
   .main {
-    width: 95%;
+    width: 90%;
   }
 
   /* Header */
