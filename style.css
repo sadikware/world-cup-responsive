@@ -307,7 +307,4 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .blog-image img {
-    width: 100%;
-  }
 }
