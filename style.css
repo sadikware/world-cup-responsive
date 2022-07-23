@@ -45,13 +45,17 @@ a {
   color: #161616;
 }
 
+.conatiner {
+  max-width: 1200px;
+  margin: auto;
+}
+
 /* Header Styles */
 
 .header {
   background-color: #161616;
   color: white;
   margin: 5rem auto;
-  width: 65%;
   min-height: 50vh;
   border-radius: 2rem;
 }
@@ -96,7 +100,6 @@ a {
 
 .main {
   margin: 5rem auto;
-  width: 65%;
 }
 
 .content-wrapper {
@@ -272,5 +275,32 @@ a {
   .footer-menu ul {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+/* Tablet Devices */
+
+@media screen and (min-width: 779px) and (max-width: 1199px) {
+  .header,
+  .main {
+    width: 90%;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .navigation-menu {
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    gap: 3rem;
+    background: none;
+  }
+
+  .blog-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
