@@ -35,7 +35,8 @@ h6 {
 
 p,
 input,
-label {
+label,
+a {
   font-size: 2rem;
 }
 
@@ -186,13 +187,51 @@ a {
 
 /* Footer */
 
+.footer {
+  background-color: #161616;
+  color: whitesmoke;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem;
+}
+
+.footer-wrapper h2 {
+  padding: 4rem;
+}
+
+.footer-wrapper hr {
+  width: 80%;
+}
+
+.footer-menu {
+  padding: 4rem;
+}
+
+.footer-menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.footer-menu li {
+  list-style: none;
+}
+.footer-menu a {
+  color: whitesmoke;
+}
+
 /* --------Responsive-------- */
 
 /* Mobile Devices */
 
 @media screen and (max-width: 778px) {
   html {
-    font-size: 45%;
+    font-size: 55%;
   }
 
   .header,
@@ -225,5 +264,12 @@ a {
   .blog-area {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Footer */
+
+  .footer-menu ul {
+    flex-direction: column;
+    align-items: center;
   }
 }
