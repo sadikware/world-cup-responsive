@@ -62,7 +62,7 @@ a {
 
 .header-wrapper {
   display: flex;
-  width: 75%;
+  width: 80%;
   margin: auto;
   justify-content: center;
   align-items: center;
@@ -235,7 +235,7 @@ a {
 
 @media screen and (max-width: 778px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 
   .header,
@@ -281,6 +281,10 @@ a {
 /* Tablet Devices */
 
 @media screen and (min-width: 779px) and (max-width: 1199px) {
+  html {
+    font-size: 50%;
+  }
+
   .header,
   .main {
     width: 90%;
@@ -302,5 +306,8 @@ a {
   .blog-area {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .blog-image img {
+    width: 100%;
   }
 }
